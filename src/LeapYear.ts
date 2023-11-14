@@ -3,15 +3,16 @@ const isValidYear = (year: number) => {
     throw Error('The year needs to be from 1600 to 4000');
   }
 };
-const isDivisibleByFourHundred = (year: number) => {
-  return year % 400 === 0;
-};
+const isDivisibleByFourHundred = (year: number) => year % 400 === 0;
+
+const isDivisibleAsLeapYear = (year: number) =>
+  year % 4 === 0 && year % 100 !== 0;
 
 const isLeapYear = (year: number) => {
   isValidYear(year);
 
   if (isDivisibleByFourHundred(year)) return true;
-  if (year % 4 === 0 && year % 100 !== 0) return true;
+  if (isDivisibleAsLeapYear(year)) return true;
 
   return false;
 };
