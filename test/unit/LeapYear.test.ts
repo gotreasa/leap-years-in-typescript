@@ -32,4 +32,8 @@ describe('Leap year', () => {
   test('should return false for the year 1700', () => {
     expect(isLeapYear(1700)).toBe(false);
   });
+
+  test('should return true when the year is 1600', () => {
+    expect(isLeapYear(1600)).toBe(true);
+  });
 });
