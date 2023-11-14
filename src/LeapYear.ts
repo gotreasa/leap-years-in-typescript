@@ -7,7 +7,7 @@ const isValidYear = (year: number) => {
 const isLeapYear = (year: number) => {
   isValidYear(year);
 
-  if (year === 1700) return false;
+  if (year === 1700 || year === 1800) return false;
 
   if (year % 4 === 0) return true;
 

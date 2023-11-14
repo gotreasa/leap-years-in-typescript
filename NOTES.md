@@ -15,5 +15,5 @@
 ✅ The year 1708 returns true
 ✅ The year 3772 returns true
 ✅ The year 1700 returns false
-🚧 The year 1600 returns true
-⚠ The year 1800 returns false
+✅ The year 1600 returns true
+🚧 The year 1800 returns false
