@@ -8,7 +8,7 @@
 
 ## 🍅 Pomodoro 1
 
-🚧 The year 1 returns false
+🚧 The year 1601 returns false
 ⚠ The year -1 returns an error that it needs to be 1600 or greater
 ⚠ The year 4001 returns an error that it needs to be 4000 or less
 ⚠ The year 1604 returns true
