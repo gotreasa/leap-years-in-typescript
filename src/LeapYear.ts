@@ -1,6 +1,5 @@
-export default class Dummy {
-  valid: boolean;
-  constructor() {
-    this.valid = true;
-  }
-}
+const isLeapYear = (year: number) => {
+  return false;
+};
+
+export default isLeapYear;
