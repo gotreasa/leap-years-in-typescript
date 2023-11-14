@@ -3,7 +3,7 @@ const isLeapYear = (year: number) => {
     throw Error('The year needs to be from 1600 to 4000');
   }
 
-  if (year === 1604 || year === 1708 || year === 3772) return true;
+  if (year % 4 === 0) return true;
 
   return false;
 };
