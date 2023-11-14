@@ -1,7 +1,11 @@
-const isLeapYear = (year: number) => {
+const isValidYear = (year: number) => {
   if (year < 1600 || year > 4000) {
     throw Error('The year needs to be from 1600 to 4000');
   }
+};
+
+const isLeapYear = (year: number) => {
+  isValidYear(year);
 
   if (year % 4 === 0) return true;
 
